@@ -1,0 +1,104 @@
+.contact {
+  padding-top: 2rem;
+  margin-bottom: 5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .contact__title {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 1rem;
+      margin-bottom: 2rem;
+
+      &::after {
+        content: "";
+        flex: 1 1 0;
+        height: 1px;
+        width: 100%;
+        background-color: $mainAccent;
+      }
+
+      h4 {
+        font-size: 2rem;
+
+        em {
+          color: $mainAccent;
+        }
+      }
+    }
+
+    h5 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: $altAccent;
+    }
+
+    p {
+      line-height: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    a {
+      color: $background;
+      text-decoration: none;
+      font-size: 1.125rem;
+      width: fit-content;
+      padding: 1rem 2rem;
+      background-color: $mainAccent;
+      transition: background-color 0.15s ease-in-out;
+
+      &:hover,
+      &:focus-visible {
+        background-color: $altAccent;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  .contact {
+    margin-bottom: 6.25rem;
+
+    &__wrapper {
+      max-width: 64rem;
+
+      .contact__title {
+        h4 {
+          font-size: 2.5rem;
+        }
+      }
+
+      h5 {
+        font-size: 1.625rem;
+      }
+
+      p {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+        margin-bottom: 3rem;
+      }
+
+      a {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  .contact {
+    margin-bottom: 7.5rem;
+
+    &__wrapper {
+      max-width: 85.375rem;
+    }
+  }
+}

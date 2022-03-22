@@ -1,0 +1,20 @@
+// Font import
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+// Primary Colors
+$background: #201f42;
+$mainAccent: #0fffc7;
+$altAccent: #ec058e;
+$text: #d6d5e3;
+
+// Reset import
+@import "_reset.scss";
+
+// Component imports
+@import "_globals.scss";
+@import "_header.scss";
+@import "_hero.scss";
+@import "_about.scss";
+@import "_projects.scss";
+@import "_contact.scss";
+@import "_footer.scss";

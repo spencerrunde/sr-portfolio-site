@@ -1,0 +1,117 @@
+header {
+  padding-block: 2rem;
+
+  .header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .skip {
+      position: absolute;
+      transform: translateY(-400%);
+      color: $background;
+      text-decoration: none;
+      font-size: 1.125rem;
+      padding: 1rem 2rem;
+      background-color: $mainAccent;
+      transition: all 0.25s ease-in-out;
+
+      &:focus-visible {
+        transform: translateY(0%);
+      }
+
+      &:hover {
+        background: $altAccent;
+      }
+    }
+
+    .header__logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: $mainAccent;
+    }
+
+    button {
+      height: 2rem;
+      color: $mainAccent;
+
+      &:hover,
+      &:focus-visible {
+        color: $altAccent;
+      }
+    }
+
+    nav {
+      position: absolute;
+      top: 5.5rem;
+      left: 1.5rem;
+      right: 1.5rem;
+      min-height: calc(100vh - 5.5rem);
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-top: 3rem;
+      gap: 2rem;
+      background-color: $background;
+
+      a {
+        text-decoration: none;
+        color: $text;
+        font-size: 1.5rem;
+        transition: color 0.15s ease-in-out;
+
+        &:hover,
+        &:focus-visible {
+          color: $altAccent;
+        }
+
+        em {
+          color: $mainAccent;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  header {
+    padding-block: 2.5rem;
+
+    .header__wrapper {
+      .header__logo {
+        font-size: 2rem;
+        margin-top: -0.5rem;
+        color: $mainAccent;
+      }
+
+      nav {
+        position: initial;
+        min-height: auto;
+
+        flex-direction: row;
+        align-items: flex-start;
+        padding-top: 0;
+        border-radius: none;
+
+        a {
+          font-size: 0.875rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    padding-block: 3rem;
+
+    .header__wrapper {
+      nav {
+        a {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
