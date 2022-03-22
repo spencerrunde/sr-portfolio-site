@@ -168,13 +168,13 @@ html body a {
 }
 
 @media screen and (min-width: 48rem) {
-  body {
+  html body {
     padding-inline: 2.5rem;
   }
 }
 
 @media screen and (min-width: 64rem) {
-  body {
+  html body {
     padding-inline: 5rem;
   }
 }

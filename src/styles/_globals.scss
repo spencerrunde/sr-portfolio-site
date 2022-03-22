@@ -30,13 +30,17 @@ html {
   }
 }
 @media screen and (min-width: 48rem) {
-  body {
-    padding-inline: 2.5rem;
+  html {
+    body {
+      padding-inline: 2.5rem;
+    }
   }
 }
 
 @media screen and (min-width: 64rem) {
-  body {
-    padding-inline: 5rem;
+  html {
+    body {
+      padding-inline: 5rem;
+    }
   }
 }
