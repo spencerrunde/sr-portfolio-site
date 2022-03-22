@@ -1,31 +1,34 @@
-body {
-  font-family: "Space Mono", monospace;
-  padding-inline: 1.5rem;
-  position: relative;
-  background-color: $background;
-  color: $text;
+html {
+  scroll-behavior: smooth;
 
-  * {
-    button {
-      cursor: pointer;
-      background: transparent;
+  body {
+    font-family: "Space Mono", monospace;
+    padding-inline: 1.5rem;
+    position: relative;
+    background-color: $background;
+    color: $text;
+
+    * {
+      button {
+        cursor: pointer;
+        background: transparent;
+      }
+
+      &:focus-visible {
+        outline: $mainAccent dotted 4px;
+      }
     }
 
-    &:focus-visible {
-      outline: $mainAccent dotted 4px;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    a {
+      font-weight: 700;
     }
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  a {
-    font-weight: 700;
   }
 }
-
 @media screen and (min-width: 48rem) {
   body {
     padding-inline: 2.5rem;

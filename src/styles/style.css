@@ -137,7 +137,11 @@ img {
   max-width: 100%;
 }
 
-body {
+html {
+  scroll-behavior: smooth;
+}
+
+html body {
   font-family: "Space Mono", monospace;
   padding-inline: 1.5rem;
   position: relative;
@@ -145,21 +149,21 @@ body {
   color: #d6d5e3;
 }
 
-body * button {
+html body * button {
   cursor: pointer;
   background: transparent;
 }
 
-body *:focus-visible {
+html body *:focus-visible {
   outline: #0fffc7 dotted 4px;
 }
 
-body h1,
-body h2,
-body h3,
-body h4,
-body h5,
-body a {
+html body h1,
+html body h2,
+html body h3,
+html body h4,
+html body h5,
+html body a {
   font-weight: 700;
 }
 
