@@ -9,7 +9,7 @@ function Contact() {
             <em>03</em> Contact
           </h4>
         </div>
-        <h5>Lets get in touch!</h5>
+        <h5>Let's get in touch!</h5>
         <p>
           Got a question or want to chat about something? Shoot me a message
           real quick! I'm actively looking for new opportunites, and I'll get
