@@ -69,7 +69,7 @@ function Header({ VscMenu, VscClose }) {
               <em>03</em> contact
             </a>
             <a
-              href="/assets/sr-resume.pdf"
+              href="/assets/spencer_runde_resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               onClick={handleNavbar}
