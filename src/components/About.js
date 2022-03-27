@@ -23,7 +23,8 @@ function About() {
               One of my main goals is to make sure I stay ahead of the curve as
               technology continues to advance. New frameworks and libraries
               interest me greatly, along with updates and revisions to existing
-              languages (think HTML5 or JS ES6).
+              languages (think HTML5 or JS ES6). I also love turning designs
+              into pixel-perfect online experiences.
             </p>
             <p>
               <em>
